@@ -8,12 +8,25 @@
  * loading will be end after document is loaded
  */
 
+// const preloader = document.querySelector("[data-preaload]");
+
+// window.addEventListener("load", function () {
+//   preloader.classList.add("loaded");
+//   document.body.classList.add("loaded");
+// });
 const preloader = document.querySelector("[data-preaload]");
 
-window.addEventListener("load", function () {
+// Thời gian chờ (milliseconds)
+const preloaderTimeout = 3000; // Ví dụ: 3000 milliseconds = 3 giây
+
+// Hàm ẩn preloader
+const hidePreloader = function () {
   preloader.classList.add("loaded");
   document.body.classList.add("loaded");
-});
+}
+
+// Ẩn preloader sau một khoảng thời gian
+setTimeout(hidePreloader, preloaderTimeout);
 
 
 
