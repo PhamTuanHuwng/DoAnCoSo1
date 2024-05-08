@@ -17,7 +17,7 @@
 const preloader = document.querySelector("[data-preaload]");
 
 // Thời gian chờ (milliseconds)
-const preloaderTimeout = 3000; // Ví dụ: 3000 milliseconds = 3 giây
+const preloaderTimeout = 10000; // Ví dụ: 3000 milliseconds = 3 giây
 
 // Hàm ẩn preloader
 const hidePreloader = function () {
