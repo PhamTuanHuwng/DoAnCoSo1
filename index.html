@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- 
     - primary meta tags
@@ -12,7 +13,7 @@
     <meta name="title" content="CÔNG TY TNHH MTV MINH TUỆ" />
     <meta
       name="description"
-      content="Đây Là Công Ty Quảng Cáo Minh Tuệ do .... code"
+      content=""
     />
     <link
       rel="apple-touch-icon"
@@ -141,10 +142,10 @@
             <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
           </div>
 
-          <span class="span">7.00 - 17.30</span>
+          <span class="span">07:00 - 17:30</span>
         </div>
 
-        <a href="tel:+11234567890" class="topbar-item link">
+        <a href="tel:0911788777" class="topbar-item link">
           <div class="icon">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -180,7 +181,7 @@
         </a>
 
         <nav class="navbar" data-navbar>
-          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <button class="close-btn" aria-label="close project" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
           </button>
 
@@ -227,7 +228,7 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#menu" class="navbar-link hover-underline">
+              <a href="#project" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
                 <span class="span">Dự Án Thực Hiện</span>
@@ -241,21 +242,13 @@
                 <span class="span">Liên Hệ</span>
               </a>
             </li>
+            <form action="" id="search-box">
+              <input type="text" id="search-text" placeholder="Bạn muốn tìm gì" required>
+              <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
           </ul>
-
+          
         </nav>
-
-        <!-- <a href="#" class="btn btn-secondary">
-          <span class="text text-1">Find A Table</span>
-
-          <span class="text text-2" aria-hidden="true">Find A Table</span>
-        </a>
-
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <span class="line line-1"></span>
-          <span class="line line-2"></span>
-          <span class="line line-3"></span>
-        </button> -->
 
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
@@ -316,12 +309,11 @@
               </div>
 
               <p class="label-2 section-subtitle slider-reveal">
-                Chuyên Nghiệp $ Chất Lượng
+                Chuyên Nghiệp & Chất Lượng
               </p>
 
               <h1 class="display-1 hero-title slider-reveal">
                 In Ấn, Quảng Cáo PANO
-                <!-- <br /> -->
               </h1>
 
               <p class="body-2 hero-text slider-reveal">Bền - Đẹp - Nhanh</p>
@@ -432,7 +424,7 @@
               <div class="contact-label color-letter">SỐ ĐIỆN THOẠI</div>
 
               <a
-                href="tel:+842333888666"
+                href="tel:0911788777"
                 class="body-1 contact-number hover-underline"
                 >0911.788.777 - 0915.026.566</a
               >
@@ -535,9 +527,12 @@
 
                   <div class="card-content">
                     <h3 class="title-4 card-title">
-                      <a>Bảng Hiệu <br> -
+                      <a>Bảng Hiệu -
                         Băng Rôn</a>
                     </h3>
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >Xem Thêm</a
+                    >
                   </div>
                 </div>
               </li>
@@ -564,6 +559,9 @@
                     <h3 class="title-4 card-title">
                       <a>Biển Quảng Cáo Ngoài Trời</a>
                     </h3>
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >Xem Thêm</a
+                    >
                   </div>
                 </div>
               </li>
@@ -590,6 +588,9 @@
                     <h3 class="title-4 card-title">
                       <a>Biển Báo Giao Thông</a>
                     </h3>
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >Xem Thêm</a
+                    >
                   </div>
                 </div>
               </li>
@@ -619,25 +620,25 @@
       -->
 
         <!-- 
-        - #SPECIAL DISH
+        - #POSTS
       -->
         <section
-          class="special-dish text-center"
+          class="posts text-center"
           aria-labelledby="dish-label"
           id="post"
         >
-          <div class="special-dish-banner">
+          <div class="posts-banner">
             <img
               src="./assets/images/footer-bg1.jpg"
               width="1000"
               height="900"
               loading="lazy"
-              alt="special dish"
+              alt="posts"
               class="img-cover"
             />
           </div>
 
-          <div class="special-dish-content bg-black-10">
+          <div class="posts-content bg-black-10">
             <div class="container">
               <img
                 src="./assets/images/badge-1.png"
@@ -662,7 +663,11 @@
                   </li>
                   <br>
                   <li>
-                    Công ty TNHH MTV Minh Tuệ đang sở hữu một đội ngũ kỹ sư, kiến trúc chuyên ngành thiết kế thi công đây sáng tạo, rất giỏi và đầy kinh nghiệm. Đội ngũ này không ngừng cho “xuất xưởng” cho ra lò những “tác phẩm” về mẫu mã, kiểu dáng kiến trúc độc đáo, luôn mới lạ và mang một dấu ấn phong cách riêng biệt.
+                    Công ty TNHH MTV Minh Tuệ đang sở hữu một đội ngũ kỹ sư, 
+                    kiến trúc chuyên ngành thiết kế thi công đây sáng tạo, rất giỏi 
+                    và đầy kinh nghiệm. Đội ngũ này không ngừng cho “xuất xưởng” cho 
+                    ra lò những “tác phẩm” về mẫu mã, kiểu dáng kiến trúc độc đáo,
+                     luôn mới lạ và mang một dấu ấn phong cách riêng biệt.
                   </li>
                   <br>
                   <li>
@@ -703,12 +708,12 @@
         </section>
 
         <!-- 
-        - #MENU
+        - #PROJECT
       -->
 
         <!-- du an thuc hien -->
 
-        <section class="section menu" aria-label="menu-label" id="menu">
+        <section class="section project" aria-label="project-label" id="project">
           <div class="container">
             <p class="section-subtitle text-center label-2">Một số dự án</p>
 
@@ -718,7 +723,7 @@
 
             <ul class="grid-list">
               <li>
-                <div class="menu-card hover:card">
+                <div class="project-card hover:card">
                   <figure
                     class="card-banner img-holder"
                     style="--width: 100; --height: 100"
@@ -753,7 +758,7 @@
               </li>
 
               <li>
-                <div class="menu-card hover:card">
+                <div class="project-card hover:card">
                   <figure
                     class="card-banner img-holder"
                     style="--width: 100; --height: 100"
@@ -788,7 +793,7 @@
               </li>
 
               <li>
-                <div class="menu-card hover:card">
+                <div class="project-card hover:card">
                   <figure
                     class="card-banner img-holder"
                     style="--width: 100; --height: 100"
@@ -824,7 +829,7 @@
               </li>
 
               <li>
-                <div class="menu-card hover:card">
+                <div class="project-card hover:card">
                   <figure
                     class="card-banner img-holder"
                     style="--width: 100; --height: 100"
@@ -850,15 +855,16 @@
                       </h3>
                     </div>
 
-                    <p class="card-text label-1">
+                    <p class="card-text label-1" >
                       Công trình cổng chào tại huyện Gio Linh (năm 2020)
                     </p>
+                    
                   </div>
                 </div>
               </li>
 
               <li>
-                <div class="menu-card hover:card">
+                <div class="project-card hover:card">
                   <figure
                     class="card-banner img-holder"
                     style="--width: 100; --height: 100"
@@ -893,7 +899,7 @@
               </li>
 
               <li>
-                <div class="menu-card hover:card">
+                <div class="project-card hover:card">
                   <figure
                     class="card-banner img-holder"
                     style="--width: 100; --height: 100"
@@ -920,15 +926,14 @@
                     </div>
 
                     <p class="card-text label-1">
-                      Công trình: CỔNG TRANG TRÍ ĐIỆN TỬ NGANG ĐƯỜNG (Tại TX
-                      Quảng Trị)
+                      Công trình: CỔNG TRANG TRÍ ĐIỆN TỬ NGANG ĐƯỜNG (Tại TX Quảng Trị)
                     </p>
                   </div>
                 </div>
               </li>
             </ul>
 
-            <p class="menu-text text-center color-letter">
+            <p class="project-text text-center color-letter">
               Thời gian làm việc <span class="span">7:00 am</span> đến
               <span class="span">5:30 pm</span>
             </p>
@@ -1011,7 +1016,7 @@
                 <h2 class="headline-1 text-center">Đặt dịch vụ online</h2>
                 <p class="form-text text-center">
                   Gọi vào số
-                  <a href="tel:0911.788.777" class="link"
+                  <a href="tel:0911788777" class="link"
                     >0911.788.777 - 0915.026.566</a
                   >
                   hoặc điền vào form
@@ -1062,7 +1067,7 @@
                 <p class="contact-label">Số điện thoại</p>
 
                 <a
-                  href="tel:0911.788.777 - 0915.026.566"
+                  href="tel:0911788777"
                   class="body-1 contact-number hover-underline"
                   >0911.788.777 <br />- <br />
                   0915.026.566</a
@@ -1090,10 +1095,10 @@
         </section>
 
         <!-- 
-        - #FEATURES
+        - #COMMIT
       -->
 
-        <section class="section features text-center" aria-label="features">
+        <section class="section commits text-center" aria-label="commits">
           <div class="container">
             <p class="section-subtitle label-2">
               Lý Do Bạn Nên Chọn Chúng Tôi ?
@@ -1102,8 +1107,8 @@
             <h2 class="headline-1 section-title color-letter">Cam Kết</h2>
 
             <ul class="grid-list">
-              <li class="feature-item">
-                <div class="feature-card">
+              <li class="commit-item">
+                <div class="commit-card">
                   <div class="card-icon">
                     <img
                       src="./assets/images/minhtue_uytin.png"
@@ -1122,8 +1127,8 @@
                 </div>
               </li>
 
-              <li class="feature-item">
-                <div class="feature-card">
+              <li class="commit-item">
+                <div class="commit-card">
                   <div class="card-icon">
                     <img
                       src="./assets/images/minhtue_chatluong.png"
@@ -1142,8 +1147,8 @@
                 </div>
               </li>
 
-              <li class="feature-item">
-                <div class="feature-card">
+              <li class="commit-item">
+                <div class="commit-card">
                   <div class="card-icon">
                     <img
                       src="./assets/images/minhtue_giaca.png"
@@ -1162,8 +1167,8 @@
                 </div>
               </li>
 
-              <li class="feature-item">
-                <div class="feature-card">
+              <li class="commit-item">
+                <div class="commit-card">
                   <div class="card-icon">
                     <img
                       src="./assets/images/minhtue_baohanh.png"
@@ -1229,7 +1234,7 @@
                       width="350"
                       height="450"
                       loading="lazy"
-                      alt="Flavour so good you’ll try to eat with your eyes."
+                      alt="Các Bảng Hiệu To Trải Dài."
                       class="img-cover"
                     />
 
@@ -1261,7 +1266,7 @@
                       width="350"
                       height="450"
                       loading="lazy"
-                      alt="Flavour so good you’ll try to eat with your eyes."
+                      alt="Những Biển Báo Giao Thông."
                       class="img-cover"
                     />
 
@@ -1293,7 +1298,7 @@
                       width="350"
                       height="450"
                       loading="lazy"
-                      alt="Flavour so good you’ll try to eat with your eyes."
+                      alt="Các Cột Trụ Thông Báo Còn Bao Nhiêu Km Tới Nơi."
                       class="img-cover"
                     />
 
@@ -1356,7 +1361,7 @@
               >quangcaominhtue@gmail.com</a
             >
 
-            <a href="tel:+84911788777" class="body-4 contact-link" style="color: rgba(255, 255, 255, 0.75);;"
+            <a href="tel:0911788777" class="body-4 contact-link" style="color: rgba(255, 255, 255, 0.75);;"
               >Số điện thoại : 0911.788.777 - 0915.026.556</a
             >
 
@@ -1370,7 +1375,7 @@
               <div class="separator"></div>
             </div>
 
-            <p class="title-1" style="color: rgb(255, 255, 255);;">Nhập email để nhận thêm tin tức và ưu đãi</p>
+            <p class="title-1">Nhập email để nhận thêm tin tức và ưu đãi</p>
 
             <br />
             <form action="" class="input-wrapper">
@@ -1429,7 +1434,7 @@
 
             <li>
               <a
-                href="#menu"
+                href="#project"
                 class="label-2 footer-link hover-underline color-while"
                 >Dự án thực hiện</a
               >
@@ -1483,7 +1488,7 @@
     </footer>
 
     <!-- 
-    - #BACK TO TOP
+    - #TRỜ LẠI ĐẦU TRANG
   -->
 
     <a
